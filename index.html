@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF‑8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login & SignUp</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+ 
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+  <div class="login_form">
+    
+    
+    <form id="signup-form">
+      <div class="login_title">Sign Up</div>
+      <div class="input_box">
+        <i class="fas fa-user"></i>
+        <input type="text" id="signup-name" placeholder="Full Name" required />
+      </div>
+      <div class="input_box">
+        <i class="fas fa-envelope"></i>
+        <input type="email" id="signup-email" placeholder="Email Address" required />
+      </div>
+      <div class="input_box">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="signup-password" placeholder="Password" required />
+      </div>
+      <button type="submit" class="login_btn">Sign Up</button>
+      <div class="register">
+         Already have an account? <a id="show-login">Login</a>
+      </div>
+    </form>
+
+    
+    <form id="login-form" class="hidden">
+      <div class="login_title">Login</div>
+      <div class="input_box">
+        <i class="fas fa-envelope"></i>
+        <input type="email" id="login-email" placeholder="Email Address" required />
+      </div>
+      <div class="input_box">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="login-password" placeholder="Password" required />
+      </div>
+      <button type="submit" class="login_btn">Login</button>
+      <div class="register">
+        Don't have an account? <a id="show-signup">Sign Up</a>
+      </div>
+    </form>
+
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
